@@ -318,7 +318,7 @@
 .home-outline {
   display: flex;
   align-items: center;
-  border-color: #f75053;
+  border-color: rgb(255 255 255 / 30%);
   border-width: 5px;
   border-radius: 70px;
   flex-direction: column;
