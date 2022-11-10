@@ -1,143 +1,174 @@
-*{
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box
-}body{padding:0;
-    margin:0
-}#notfound{
-    position:relative;
-    height:100vh
-}#notfound .notfound{
-    position:absolute;
-    left:50%;
-    top:50%;
-    -webkit-transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%)
-}.notfound{
-    max-width:410px;
-    width:100%;
-    text-align:center
-}.notfound .notfound-404{
-    height:280px;
-    position:relative;
-    z-index:-1
-}.notfound .notfound-404 h1{
-    font-family:montserrat,sans-serif;
-    font-size:230px;
-    margin:0;
-    font-weight:900;
-    position:absolute;
-    left:50%;
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    transform:translateX(-50%);
-    background:url(https://colorlib.com/etc/404/colorlib-error-404-10/img/bg.jpg) no-repeat;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    background-size:cover;
-    background-position:center
-}.notfound h2{
-    font-family:montserrat,sans-serif;
-    color:#000;
-    font-size:24px;
-    font-weight:700;
-    text-transform:uppercase;
-    margin-top:0
-}.notfound p{
-    font-family:montserrat,sans-serif;
-    color:#000;
-    font-size:14px;
-    font-weight:400;
-    margin-bottom:20px;
-    margin-top:0
-}.notfound a{
-    font-family:montserrat,sans-serif;
-    font-size:14px;
-    text-decoration:none;
-    text-transform:uppercase;
-    background:#0046d5;
-    display:inline-block;
-    padding:15px 30px;
-    border-radius:40px;
-    color:#fff;
-    font-weight:700;
-    -webkit-box-shadow:0 4px 15px -5px #0046d5;
-    box-shadow:0 4px 15px -5px #0046d5
-}@media only screen and (max-width:767px){
-    .notfound .notfound-404{
-        height:142px
-    }.notfound .notfound-404 h1{
-        font-size:112px
-    }
-}*{
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box
-}body{padding:0;
-    margin:0
-}#notfound{
-    position:relative;
-    height:100vh
-}#notfound .notfound{
-    position:absolute;
-    left:50%;
-    top:50%;
-    -webkit-transform:translate(-50%,-50%);
-    -ms-transform:translate(-50%,-50%);
-    transform:translate(-50%,-50%)
-}.notfound{
-    max-width:410px;
-    width:100%;
-    text-align:center
-}.notfound .notfound-404{
-    height:280px;
-    position:relative;
-    z-index:-1
-}.notfound .notfound-404 h1{
-    font-family:montserrat,sans-serif;
-    font-size:230px;
-    margin:0;
-    font-weight:900;
-    position:absolute;
-    left:50%;
-    -webkit-transform:translateX(-50%);
-    -ms-transform:translateX(-50%);
-    transform:translateX(-50%);
-    background:url(https://colorlib.com/etc/404/colorlib-error-404-10/img/bg.jpg) no-repeat;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
-    background-size:cover;
-    background-position:center
-}.notfound h2{
-    font-family:montserrat,sans-serif;
-    color:#000;
-    font-size:24px;
-    font-weight:700;
-    text-transform:uppercase;
-    margin-top:0
-}.notfound p{
-    font-family:montserrat,sans-serif;
-    color:#000;
-    font-size:14px;
-    font-weight:400;
-    margin-bottom:20px;
-    margin-top:0
-}.notfound a{
-    font-family:montserrat,sans-serif;
-    font-size:14px;
-    text-decoration:none;
-    text-transform:uppercase;
-    background:#0046d5;
-    display:inline-block;
-    padding:15px 30px;
-    border-radius:40px;
-    color:#fff;
-    font-weight:700;
-    -webkit-box-shadow:0 4px 15px -5px #0046d5;
-    box-shadow:0 4px 15px -5px #0046d5
-}@media only screen and (max-width:767px){
-    .notfound .notfound-404{
-        height:142px
-    }.notfound .notfound-404 h1{
-        font-size:112px
-    }
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+:root {
+  --blue: #0e0620;
+  --white: #fff;
+  --green: #2ccf6d;
 }
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family:"Nunito Sans";
+  color: var(--blue);
+  font-size: 1em;
+}
+button {
+  font-family:"Nunito Sans";
+}
+ul {
+  list-style-type: none;
+  padding-inline-start: 35px;
+}
+svg {
+  width: 100%;
+  visibility: hidden;
+}
+h1 {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight:bold;
+}
+h2 {
+  font-weight:bold;
+}
+.hamburger-menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 35px;
+  z-index: 2;
+
+  & button {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+
+    & span {
+      position: absolute;
+      height: 3px;
+      background: #000;
+      width: 100%;
+      left: 0px;
+      top: 0px;
+      transition: 0.1s ease-in;
+      &:nth-child(2) {
+        top: 9px;
+      }
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+  }
+  & [data-state="open"] {
+    & span {
+      &:first-child {
+        transform: rotate(45deg);
+        top: 10px;
+      }
+      &:nth-child(2) {
+        width: 0%;
+        opacity:0;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 10px;
+      }
+    }
+  }
+}
+nav {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--green);
+  color: var(--blue);
+  width: 300px;
+  z-index: 1;
+  padding-top: 80px;
+  transform: translateX(-100%);
+  transition: 0.24s cubic-bezier(.52,.01,.8,1);
+  & li {
+    transform: translateX(-5px);
+    transition: 0.16s cubic-bezier(0.44, 0.09, 0.46, 0.84);
+    opacity: 0;
+  }
+  & a {
+    display: block;
+    font-size: 1.75em;
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.24s ease-in-out;
+    &:hover {
+      text-decoration: none;
+      color: var(--white);
+    }
+  }
+  &[data-state="open"] {
+    transform: translateX(0%);
+    & ul {
+      @for $i from 1 through 4 {
+        li:nth-child(#{$i}) {
+          transition-delay: 0.16s * $i;
+          transform: translateX(0px);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.btn {
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  letter-spacing: 2px;
+  transition: 0.2s ease;
+  font-weight: bold;
+  margin: 5px 0px;
+  &.green {
+    border: 4px solid var(--green);
+    color: var(--blue);
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 100%;
+      background: var(--green);
+      z-index: -1;
+      transition: 0.2s ease;
+    }
+    &:hover {
+      color: var(--white);
+      background: var(--green);
+      transition: 0.2s ease;
+      &:before {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width:768px) {
+  body {
+    display:block;
+  }
+  .container {
+    margin-top:70px;
+    margin-bottom:70px;
+  }
+} 
