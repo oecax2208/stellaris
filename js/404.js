@@ -1,3 +1,4 @@
+$(document).ready(function () {
 gsap.set("svg", { visibility: "visible" });
 gsap.to("#headStripe", {
   y: 0.5,
@@ -84,4 +85,5 @@ const nav = document.querySelector('nav');
 burger.addEventListener('click',(e) => {
   burger.dataset.state === 'closed' ? burger.dataset.state = "open" : burger.dataset.state = "closed"
   nav.dataset.state === "closed" ? nav.dataset.state = "open" : nav.dataset.state = "closed"
+});
 })
