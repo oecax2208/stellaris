@@ -25,7 +25,23 @@ body{
 .star img{
   width: 100%;
 }
-
+.template-button {
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  padding-right: var(--dl-space-space-oneandhalfunits);
+  background-color: var(--dl-color-gray-black);
+}
+.home-get-started4 {
+  margin-bottom: 0px;
+}
+.home-get-started4:hover {
+  color: black;
+  background-color: #ffffff;
+}
+.home-text046 {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
 .top{
   left: 37px;
   top: -71px;
